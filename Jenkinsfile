@@ -21,7 +21,8 @@ pipeline {
     stage ('Build') {
       steps {
         // build
-        sh 'bundle exec rake build'
+        // sh 'bundle exec rake build'
+	sh 'bundle --version'
       }
 
       post {
